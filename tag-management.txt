@@ -1,0 +1,23 @@
+@all
+- use this tag to run all test cases
+
+@skip
+- use this tag to skip test cases during the execution
+
+@v1
+- use this tag to run only v1 version related test cases
+
+@db
+- use this tag to run only database related test cases
+
+@creditMemos
+- use this tag to run only credit memos related test cases
+
+@GETCreditMemoHealthAPI
+- use this tag to run only get credit memo health API related test cases
+
+@GETSearchCreditMemoAPI
+- use this tag to run only get search credit memo API related test cases
+
+@GETSearchCreditMemoSummaryAPI
+- use this tag to run only get search credit memo summary API related test cases

@@ -1,0 +1,9 @@
+{
+  "v1": {
+    "creditMemos": {
+      "creditMemoHealth": "/customers/credits/health",
+      "searchCreditMemo": "/customers/credits/search",
+      "searchCreditMemoSummary": "/customers/credits/summary/search"
+    }
+  }
+}

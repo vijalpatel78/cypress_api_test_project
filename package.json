@@ -1,0 +1,24 @@
+{
+  "name": "vc-api-automation",
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^20.0.5",
+    "@cypress/browserify-preprocessor": "3.0.2",
+    "ajv": "^8.12.0"
+  },
+  "devDependencies": {
+    "cypress": "^13.8.1",
+    "cypress-sql-server": "^1.0.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": [
+      "cypress/api-tests/step-definitions/**/*.js"
+    ],
+    "omitFiltered": true,
+    "filterSpecs": true
+  },
+  "scripts": {
+    "service-hub-dev02": "npx cypress run --record --key f74a085a-ff0b-477c-baf2-520f0ee2af49 --tag \"DEV02\" --browser chrome --env testingEnvironment=dev02,tags=\"@all\"",
+    "service-hub-uat02": "npx cypress run --record --key f74a085a-ff0b-477c-baf2-520f0ee2af49 --tag \"UAT02\" --browser chrome --env testingEnvironment=uat02,tags=\"@all\"",
+    "service-hub-production": "npx cypress run --record --key f74a085a-ff0b-477c-baf2-520f0ee2af49 --tag \"Production\" --browser chrome --env testingEnvironment=production,tags=\"@all and not @db\""
+  }
+}
