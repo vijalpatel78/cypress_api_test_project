@@ -1,0 +1,119 @@
+{
+  "type": "object",
+  "properties": {
+    "filters": {
+      "type": "object",
+      "properties": {
+        "division": {
+          "type": "array",
+          "items": [
+            {
+              "type": "string"
+            }
+          ]
+        },
+        "status": {
+          "type": "array",
+          "items": [
+            {
+              "type": "string"
+            }
+          ]
+        }
+      },
+      "required": [
+        "division",
+        "status"
+      ]
+    },
+    "sort": {
+      "type": "array",
+      "items": {}
+    },
+    "totalPages": {
+      "type": "integer"
+    },
+    "totalRecords": {
+      "type": "integer"
+    },
+    "currentPage": {
+      "type": "integer"
+    },
+    "data": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "creditMemoId": {
+              "type": "integer"
+            },
+            "purchaseOrder": {
+              "type": "string"
+            },
+            "billTo": {
+              "type": "string"
+            },
+            "shipTo": {
+              "type": "string"
+            },
+            "creditMemoDate": {
+              "type": "string"
+            },
+            "amount": {
+              "type": "object",
+              "properties": {
+                "value": {
+                  "type": "string"
+                },
+                "currency": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "value",
+                "currency"
+              ]
+            },
+            "division": {
+              "type": "string"
+            },
+            "status": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "creditMemoId",
+            "purchaseOrder",
+            "billTo",
+            "shipTo",
+            "creditMemoDate",
+            "amount",
+            "division",
+            "status"
+          ]
+        }
+      ]
+    },
+    "success": {
+      "type": "boolean"
+    },
+    "message": {
+      "type": "string"
+    },
+    "errors": {
+      "type": "null"
+    }
+  },
+  "required": [
+    "filters",
+    "sort",
+    "totalPages",
+    "totalRecords",
+    "currentPage",
+    "data",
+    "success",
+    "message",
+    "errors"
+  ]
+}
